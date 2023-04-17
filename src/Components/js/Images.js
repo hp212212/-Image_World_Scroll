@@ -9,7 +9,7 @@ export default function Images(Props) {
   const ssss = () => { document.getElementById('Model-container').style.display = 'none' }
   return (
     <>
-      <div className='ImagesMain'>
+      <div className='ImagesMain' id='ImagesMain'>
         <div className='Images-NotFound' id='Img-Not-Found' style={{ display: Props.notfound }}>
           <h1>Sorry</h1>
           <h1>No Image Found !!!</h1>

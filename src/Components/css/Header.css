@@ -4,6 +4,7 @@
     padding: 3rem 0 1rem;
     font-size: 3.5rem;
 }
+
 .HeaderImg {
     width: 25px;
     height: 25px;
@@ -11,5 +12,13 @@
     top: 2rem;
     right: 2rem;
     cursor: pointer;
-    /* background: #fff; */
+}
+
+.SearchTop {
+    width: 25px;
+    height: 25px;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    cursor: pointer;
 }

@@ -15,8 +15,6 @@ export default function MiddleByLoding() {
         let url;
         if (Input) {
             url = `https://api.unsplash.com/search/photos?client_id=Bb-6szc-iyrTPIG_IFgEl2Rt3-HiUOLaOVA0bfbKJQU&page=${Current}&query=${Input}`;
-        } else {
-            url = `https://api.unsplash.com/search/photos?client_id=Bb-6szc-iyrTPIG_IFgEl2Rt3-HiUOLaOVA0bfbKJQU&page=${Current}`;
         }
         let TempImg = []
         // await fetch(`https://api.unsplash.com/search/photos?client_id=Bb-6szc-iyrTPIG_IFgEl2Rt3-HiUOLaOVA0bfbKJQU&page=${Current}&query=${Input}`)
@@ -35,23 +33,19 @@ export default function MiddleByLoding() {
         try {
             const response = await fetch(url);
             const data = await response.json();
-            if (Input && Current === 1) {
+            if (Current === 1) {
                 setAllImages((old) => {
                     for (let i of data.results) {
                         TempImg.push(i.urls.raw)
                     }
                     return TempImg;
                 })
-            } else if (Input) {
+            } else {
                 setAllImages((old) => {
                     for (let i of data.results) {
                         TempImg.push(i.urls.raw)
                     }
                     return [...old, ...TempImg];
-                })
-            } else {
-                setAllImages((old) => {
-                    return [...old, ...data]
                 })
             }
             setNewImages(false);
@@ -97,6 +91,7 @@ export default function MiddleByLoding() {
         } else {
             setInput(document.getElementById('SearchInput').value)
             document.getElementById('SearchInput').value = ''
+            setCurrent(1)
         }
     }
 
@@ -117,6 +112,7 @@ export default function MiddleByLoding() {
                         (<Images Name={Input} images={AllImages} found='none' notfound='flex'
                         />)
                 }
+                {loading && <h2 className='loading'>Loading...</h2>}
             </div>
         </>
     )

@@ -8,6 +8,12 @@
     flex-direction: column;
 }
 
+.Middle>h2 {
+    margin: 0 auto;
+    font-size: 5rem;
+    color: rgb(245, 42, 7);
+}
+
 
 /* -------------- Search Section ----------------- */
 .SearchMain {
@@ -163,42 +169,4 @@
     transition: all 0.3s ease-in-out;
     display: block;
     cursor: pointer;
-}
-
-
-/* -------------- Pagination Section ----------------- */
-.PaginationMain {
-    width: 300px;
-    margin: 1rem auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: rgb(202, 233, 238);
-    border-radius: 30px;
-}
-
-.PaginationMain>img {
-    width: 15px;
-    height: 15px;
-    cursor: pointer;
-    margin: 0.5rem;
-}
-
-.PaginationMain .Numbers {
-    width: 200px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.PaginationMain .Numbers p {
-    margin: 0;
-    font-size: 1.5rem;
-    color: #000;
-    cursor: pointer;
-}
-
-.PaginationMain .Numbers p.active {
-    color: red;
-    font-weight: 700;
 }
