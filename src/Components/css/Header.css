@@ -1,0 +1,15 @@
+.HeaderH1 {
+    color: var(--bgdark);
+    margin: 0 auto;
+    padding: 3rem 0 1rem;
+    font-size: 3.5rem;
+}
+.HeaderImg {
+    width: 25px;
+    height: 25px;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    cursor: pointer;
+    /* background: #fff; */
+}

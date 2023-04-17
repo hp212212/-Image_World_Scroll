@@ -1,0 +1,204 @@
+.Middle {
+    min-height: 80vh;
+    color: var(--bgdark);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* -------------- Search Section ----------------- */
+.SearchMain {
+    width: 100%;
+}
+
+.SearchMain form {
+    max-width: 600px;
+    width: 90vw;
+    margin: 2rem auto;
+    position: relative;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 30px;
+    border: 2px solid #000;
+}
+
+.SearchMain form input {
+    width: 100%;
+    outline: none;
+    border: none;
+    padding-left: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.SearchMain form button {
+    border-radius: 30px;
+    position: absolute;
+    top: 0.3rem;
+    right: 0.3rem;
+    bottom: 0.3rem;
+    width: 70px;
+    background: rgb(61, 61, 243);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* -------------- Images Section ----------------- */
+.ImagesMain {
+    width: 100%;
+}
+
+.Model-container {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.Model-container::-webkit-scrollbar {
+    display: none;
+}
+
+.Model-container .Model-container-inner {
+    width: 80%;
+    margin: 5vh auto;
+    position: relative;
+    vertical-align: middle;
+}
+
+.Model-container-inner>img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    border: #000 solid 2px;
+    border-radius: 5px;
+}
+
+.Images-NotFound {
+    /* display: none; */
+    width: 60%;
+    margin: 5rem auto;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Images-NotFound h1 {
+    margin-bottom: 2rem;
+    font-size: 4em;
+    font-weight: 900;
+    color: rgb(245, 42, 7);
+}
+
+.ImagesMain-container {
+    width: 95%;
+    margin: 0 auto;
+    /* display: grid; */
+    /* grid-template-rows: 15rem; */
+    gap: 20px;
+    /* justify-content: flex-start; */
+    align-items: center;
+    overflow: hidden;
+}
+
+.ImagesMain-container .Result-For {
+    display: inline-block;
+    margin: 0 auto;
+    font-size: 2rem;
+    color: var(--bgdark);
+    text-transform: capitalize;
+    font-weight: 500;
+    word-spacing: 5px;
+}
+
+.ImagesMain-container .Result-For span {
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: rgb(255, 30, 60);
+    letter-spacing: 2px;
+    border-bottom: rgb(255, 0, 157) 2px solid;
+}
+
+@media (min-width:768px) {
+    .ImagesMain-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .ImagesMain-container .Result-For {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+
+@media (min-width:992px) {
+    .ImagesMain-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .ImagesMain-container .Result-For {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+}
+
+.ImagesMain-container>img {
+    border-radius: 5px;
+    width: 100%;
+    height: 30rem;
+    /* object-position: center; */
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+    display: block;
+    cursor: pointer;
+}
+
+
+/* -------------- Pagination Section ----------------- */
+.PaginationMain {
+    width: 300px;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(202, 233, 238);
+    border-radius: 30px;
+}
+
+.PaginationMain>img {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    margin: 0.5rem;
+}
+
+.PaginationMain .Numbers {
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.PaginationMain .Numbers p {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #000;
+    cursor: pointer;
+}
+
+.PaginationMain .Numbers p.active {
+    color: red;
+    font-weight: 700;
+}
