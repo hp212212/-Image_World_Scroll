@@ -34,7 +34,7 @@ export default function Images(Props) {
         {/* <h6>Created By @ Hitesh_Patel</h6> */}
         <div className='Model-container' id='Model-container' onClick={ssss}>
           <div className='Model-container-inner'>
-            <img src={Props.images[ShowIndex]} alt="Hitesh" id='ModelImage' onClick={() => document.getElementById('Model-container').style.display = 'flex'} />
+            <img src={`${Props.images[ShowIndex]}&q=85`} alt="Hitesh" id='ModelImage' onClick={() => document.getElementById('Model-container').style.display = 'flex'} />
           </div>
         </div>
       </div>
