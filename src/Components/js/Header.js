@@ -33,6 +33,7 @@ export default function Header() {
     <>
       <img className='HeaderImg' src={btnName} alt="Hitesh" onClick={ThemToggle} />
       <h1 className='HeaderH1'>Search Images</h1>
+      <h6 className='HeaderH6'>Created By @ Hitesh_Patel</h6>
       <img className='SearchTop' src={GoToUp} alt="Hitesh"
         onClick={GoTop}
       />

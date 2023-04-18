@@ -31,6 +31,7 @@ export default function Images(Props) {
             })
           }
         </div>
+        {/* <h6>Created By @ Hitesh_Patel</h6> */}
         <div className='Model-container' id='Model-container' onClick={ssss}>
           <div className='Model-container-inner'>
             <img src={Props.images[ShowIndex]} alt="Hitesh" id='ModelImage' onClick={() => document.getElementById('Model-container').style.display = 'flex'} />

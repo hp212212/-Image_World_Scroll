@@ -1,8 +1,17 @@
 .HeaderH1 {
     color: var(--bgdark);
     margin: 0 auto;
-    padding: 3rem 0 1rem;
+    padding: 1rem 0 0 0;
     font-size: 3.5rem;
+}
+
+.HeaderH6 {
+    color: var(--bgdark);
+    margin: 0 auto;
+    /* padding: 1rem; */
+    font-size: 1.5rem;
+    /* width: 206px;
+    height: 40px; */
 }
 
 .HeaderImg {
