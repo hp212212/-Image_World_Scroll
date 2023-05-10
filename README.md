@@ -1,16 +1,16 @@
 # Image World
-## Hosted Live: https://search-images-by-page-hitesh.netlify.app/
+## Hosted Live: https://search-images-by-scroll-hitesh.netlify.app/
 
 Developed with: React, HTML, CSS, APIs
 
-*📌 An image search engine that will help to find any photo, simply by writing a keyword in the search bar. On PAGINATION, can enjoy a huge collection of images based on "UNSPLASH API".*
+*📌 An image search engine that will help to find any photo, simply by writing a keyword in the search bar. On SCROLLING, can enjoy a huge collection of images based on "UNSPLASH API".*
 
 
-<img src="Image_World_P.png" >
+<img src="Image_World_S.png" >
 
 *📌 By clicking on the image, it will open and can download in super HD quality.* 
 
-<img src="Image_World_P2.png" >
+<img src="Image_World_S2.png" >
 
 *Note : All images are depend on "UNSPLASH API".* 
 
